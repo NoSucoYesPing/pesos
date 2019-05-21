@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="secondary" text-center>
+    <ion-title>
+      Calculo de Peso Cósmico
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating> Quantos você pesa? </ion-label>
+    <ion-input [(ngModel)]="numberA" type="number"> </ion-input>
+  </ion-item>
+  
+ 
+   <ion-button (click)="performFunction('a')" color="warning" size="full"> SOL </ion-button>
+ 
+   <ion-button (click)="performFunction('b')" color="light" size="full"> LUA </ion-button>
+   
+   <ion-button (click)="performFunction('c')" color="medium" size="full"> MERCÚRIO </ion-button>
+   
+   <ion-button (click)="performFunction('d')" color="success" size="full"> VENUS </ion-button>
+
+   <ion-button (click)="performFunction('e')" color="danger" size="full"> MARTE </ion-button>
+
+   <ion-button (click)="performFunction('f')" color="primary" size="full"> JÚPITER </ion-button>
+
+   <ion-button (click)="performFunction('g')" color="secondary" size="full"> SATURNO </ion-button>
+
+   <ion-button (click)="performFunction('h')" color="tertiary" size="full"> URANO </ion-button>
+
+   <ion-button (click)="performFunction('i')" color="medium" size="full"> NETUNO </ion-button>
+
+   <ion-button (click)="performFunction('j')" color="dark" size="full"> PLUTÃO </ion-button>
+
+   <ion-button (click)="performFunction('k')" color="dark" size="full"> TITÃ </ion-button>
+
+   <ion-button (click)="performFunction('l')" color="dark" size="full"> EUROPA </ion-button>
+   
+  <ion-item>
+   <ion-label fixed> Ação </ion-label>
+   <ion-label fixed> {{typeOfAction}}</ion-label>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label fixed> Resultado </ion-label>
+    <ion-label> {{result}}</ion-label>
+  </ion-item>
+ 
+</ion-content>
